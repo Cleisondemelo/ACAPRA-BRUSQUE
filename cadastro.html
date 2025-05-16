@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cadastro - ACAPRA</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+      font-size: 16px;
+    }
+
+    .form-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      color: #eecb8d;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #eecb8d;
+      color: #333;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e3b96f;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .login-link a {
+      text-decoration: none;
+      color: #eecb8d;
+    }
+  </style>
+</head>
+
+<body>
+  <header style="display: flex; justify-content: space-between; align-items: center; background-color: #eecb8d; padding: 10px 20px; color: white;">
+    <div style="font-size: 24px; font-weight: bold;">
+      ACAPRA
+    </div>
+    <nav>
+      <a href="catalogo.html" style="margin: 0 15px; color: white; text-decoration: none; font-size: 16px;">
+        Ver Animais para Adoção
+      </a>
+    </nav>
+    <div>
+      <a href="cadastro.html" style="margin-right: 15px; color: white; text-decoration: none;">Cadastro</a>
+      <a href="login.html" style="color: white; text-decoration: none;">Login</a>
+    </div>
+  </header>
+
+  <div class="form-wrapper">
+    <div class="form-container">
+      <h2>Crie sua conta</h2>
+      <form action="#" method="post">
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="(xx) xxxxx-xxxx">
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <div class="login-link">
+        Já tem uma conta? <a href="login.html">Entrar</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
