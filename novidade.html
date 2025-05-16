@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Novidades</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #eecb8d;
+      padding: 10px 20px;
+      color: white;
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    header nav a {
+      margin: 0 15px;
+    }
+
+    header div a {
+      margin-right: 15px;
+    }
+
+    .novidades-container {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .novidades-container h2 {
+      color: #eecb8d;
+      font-size: 32px;
+      margin-bottom: 30px;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background-color: white;
+      border: 4px solid #f0cc8d;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      color: #eecb8d;
+      font-size: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #333;
+      margin: 0;
+      text-align: justify;
+    }
+
+    .card a {
+      color: #eecb8d;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0 15px 15px;
+      display: block;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div style="font-size: 24px; font-weight: bold;">
+      ACAPRA
+    </div>
+    <nav>
+      <a href="catalogo.html">Ver Animais para Adoção</a>
+    </nav>
+    <div>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="login.html">Login</a>
+    </div>
+  </header>
+
+  <div class="novidades-container">
+    <h2>Novidades, Eventos e Atualizações</h2>
+
+    <div class="cards-grid">
+      <div class="card">
+        <h3>Feira de Adoção neste Domingo</h3>
+        <p>A ACAPRA realizará uma feira de adoção neste domingo dia 18/05, venha achar um companheiro pro seu lar!</p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

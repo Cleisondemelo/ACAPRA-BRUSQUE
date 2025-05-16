@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Administrativo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+
+    .titulo-centralizado {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 30px;
+    }
+
+    .titulo-centralizado h1 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .painel-opcoes {
+      border: 2px solid #efcc8f;
+      padding: 30px;
+      width: fit-content;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .botao-opcao {
+      text-decoration: none;
+      background-color: #efcc8f;
+      color: #000;
+      font-weight: bold;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .botao-opcao:hover {
+      background-color: #e5b957;
+    }
+  </style>
+</head>
+
+<body>
+  <header style="display: flex; justify-content: space-between; align-items: center; background-color: #eecb8d; padding: 10px 20px; color: white;">
+    <div style="font-size: 24px; font-weight: bold;">
+      ACAPRA
+    </div>
+    <nav>
+      <a href="catalogo.html" style="margin: 0 15px; color: white; text-decoration: none; font-size: 16px;">
+        Ver Animais para Adoção
+      </a>
+    </nav>
+    <div>
+      <a href="cadastro.html" style="margin-right: 15px; color: white; text-decoration: none;">Cadastro</a>
+      <a href="login.html" style="color: white; text-decoration: none;">Login</a>
+    </div>
+  </header>
+
+  <div class="titulo-centralizado">
+    <h1>Painel Administrativo</h1>
+  </div>
+
+  <div class="painel-opcoes">
+    <a href="cadastrar_animal.html" class="botao-opcao">Cadastrar/Editar Animal</a>
+    <a href="postar_novidades.html" class="botao-opcao">Postar Novidades</a>
+    <a href="formulario.html" class="botao-opcao">Formulários e Pedidos de Adoção</a>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Informações do Animal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    .topo {
+      background-color: #f4cc83;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .topo a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      border: 2px solid #efcc8f;
+      background-color: #ffffff;
+    }
+
+    .animal-img {
+      max-width: 200px;
+      border-radius: 10px;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info h2 {
+      margin-top: 0;
+      font-size: 24px;
+    }
+
+    .info p {
+      margin: 6px 0;
+    }
+
+    .descricao {
+      margin-top: 20px;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .botao {
+      background-color: #efcc8f;
+      color: black;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .botao:hover {
+      background-color: #e5b957;
+    }
+  </style>
+</head>
+
+<body>
+  <header style="display: flex; justify-content: space-between; align-items: center; background-color: #eecb8d; padding: 10px 20px; color: white;">
+    <div style="font-size: 24px; font-weight: bold;">
+      ACAPRA
+    </div>
+    <nav>
+      <a href="catalogo.html" style="margin: 0 15px; color: white; text-decoration: none; font-size: 16px;">
+        Ver Animais para Adoção
+      </a>
+    </nav>
+    <div>
+      <a href="cadastro.html" style="margin-right: 15px; color: white; text-decoration: none;">Cadastro</a>
+      <a href="login.html" style="color: white; text-decoration: none;">Login</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <div>
+      <img src="branca.jpg" alt="Branca" class="animal-img">
+      <h2>Branca</h2>
+    </div>
+
+    <div class="info">
+      <h3>Informações da Branca:</h3>
+      <p><strong>Porte:</strong> Médio</p>
+      <p><strong>Idade:</strong> 1 ano</p>
+      <p><strong>Gênero:</strong> Fêmea</p>
+      <p><strong>Raça:</strong> Mestiço</p>
+
+      <div class="descricao">
+        <h4>Descrição</h4>
+        <p>Branca é uma cadelinha dócil e cheia de energia, pronta para encher sua casa de amor e alegria. Tem cerca de 1 ano, porte médio, já está vacinada e castrada. Se você procura uma companheira leal, ela está esperando por você!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="botoes">
+    <button class="botao">Voltar</button>
+    <button class="botao">Quero Adotar!</button>
+  </div>
+
+</body>
+</html>

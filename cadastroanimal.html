@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro do Animal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .topo {
+      background-color: #efcc8f;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .topo a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+    }
+
+    .container {
+      background-color: #eee;
+      width: 900px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+    }
+
+    .upload-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .upload-label {
+      background-color: #efcc8f;
+      color: black;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .form-box {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input[type="text"], textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      width: 100%;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .checkbox-item {
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .botao {
+      background-color: #efcc8f;
+      color: black;
+      font-weight: bold;
+      padding: 12px 25px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .botao:hover {
+      background-color: #e5b957;
+    }
+  </style>
+</head>
+
+<body>
+  <header style="display: flex; justify-content: space-between; align-items: center; background-color: #eecb8d; padding: 10px 20px; color: white;">
+    <div style="font-size: 24px; font-weight: bold;">
+      ACAPRA
+    </div>
+    <nav>
+      <a href="catalogo.html" style="margin: 0 15px; color: white; text-decoration: none; font-size: 16px;">
+        Ver Animais para Adoção
+      </a>
+    </nav>
+    <div>
+      <a href="cadastro.html" style="margin-right: 15px; color: white; text-decoration: none;">Cadastro</a>
+      <a href="login.html" style="color: white; text-decoration: none;">Login</a>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <div class="upload-box">
+      <img src="imagem-preview.png" alt="Upload de Imagem" width="150">
+      <label for="fileInput" class="upload-label">Upload de Imagem</label>
+      <input type="file" id="fileInput" name="imagem">
+    </div>
+
+    <div class="form-box">
+      <input type="text" placeholder="Insira seu apelido">
+
+      <div class="checkbox-group">
+        <label class="checkbox-item">
+          <input type="checkbox" name="info[]" value="Filhote"> Filhote
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" name="info[]" value="Adulto"> Adulto
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" name="info[]" value="Castrado"> Castrado
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" name="info[]" value="Macho"> Vacinado
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" name="info[]" value="Fêmea"> Vacinado
+        </label>
+      </div>
+
+      <textarea placeholder="Descrição do animal" rows="5"></textarea>
+
+      <div class="botoes">
+        <button class="botao">Voltar</button>
+        <button class="botao">Cadastrar</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
